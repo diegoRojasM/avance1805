@@ -99,7 +99,7 @@ return (
 
       {/* Ajustes y cerrar sesión */}
       <View style={styles.bottomSection}>
-        <TouchableOpacity style={styles.optionRow}>
+        <TouchableOpacity style={styles.optionRow}  onPress={() => router.push('/pages/tab/Profile/PrivacySettings')}>
           <Text style={styles.optionText}>Permisos y ajustes de privacidad</Text>
           <Feather name="chevron-right" size={20} color={colors.verdeOscuro} />
         </TouchableOpacity>
